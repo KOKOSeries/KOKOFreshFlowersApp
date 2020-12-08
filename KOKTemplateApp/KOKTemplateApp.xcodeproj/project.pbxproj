@@ -20,6 +20,12 @@
 		E337E1A2257B313E0045328C /* opensourceSDKdata.plist in Resources */ = {isa = PBXBuildFile; fileRef = E337E1A1257B313E0045328C /* opensourceSDKdata.plist */; };
 		E337E1B8257B381E0045328C /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E337E1B4257B381E0045328C /* YYWeakProxy.m */; };
 		E337E1B9257B381E0045328C /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E337E1B6257B381E0045328C /* YYFPSLabel.m */; };
+		E344ECDD257F2D0700E8651F /* MakeGoodsFreshFlowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E344ECDB257F2D0700E8651F /* MakeGoodsFreshFlowerViewController.m */; };
+		E344ECDE257F2D0700E8651F /* MakeGoodsFreshFlowerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E344ECDC257F2D0700E8651F /* MakeGoodsFreshFlowerViewController.xib */; };
+		E344ECE6257F2FA100E8651F /* ViewFLowerMaterialVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E344ECE4257F2FA100E8651F /* ViewFLowerMaterialVC.m */; };
+		E344ECE7257F2FA100E8651F /* ViewFLowerMaterialVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E344ECE5257F2FA100E8651F /* ViewFLowerMaterialVC.xib */; };
+		E344ECEC257F30BF00E8651F /* SendFlowersLIstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E344ECEA257F30BF00E8651F /* SendFlowersLIstVC.m */; };
+		E344ECED257F30BF00E8651F /* SendFlowersLIstVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E344ECEB257F30BF00E8651F /* SendFlowersLIstVC.xib */; };
 		E38EDD78257C066C0055CC7C /* OpensourceSDKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E38EDD76257C066C0055CC7C /* OpensourceSDKVC.m */; };
 		E38EDD79257C066C0055CC7C /* OpensourceSDKVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E38EDD77257C066C0055CC7C /* OpensourceSDKVC.xib */; };
 		E3E52188257B5D9F00D0D7DB /* KOKWindowHelperVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E52187257B5D9F00D0D7DB /* KOKWindowHelperVC.m */; };
@@ -49,6 +55,15 @@
 		E337E1B5257B381E0045328C /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
 		E337E1B6257B381E0045328C /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
 		E337E1B7257B381E0045328C /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		E344ECDA257F2D0700E8651F /* MakeGoodsFreshFlowerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakeGoodsFreshFlowerViewController.h; sourceTree = "<group>"; };
+		E344ECDB257F2D0700E8651F /* MakeGoodsFreshFlowerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakeGoodsFreshFlowerViewController.m; sourceTree = "<group>"; };
+		E344ECDC257F2D0700E8651F /* MakeGoodsFreshFlowerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MakeGoodsFreshFlowerViewController.xib; sourceTree = "<group>"; };
+		E344ECE3257F2FA100E8651F /* ViewFLowerMaterialVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewFLowerMaterialVC.h; sourceTree = "<group>"; };
+		E344ECE4257F2FA100E8651F /* ViewFLowerMaterialVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewFLowerMaterialVC.m; sourceTree = "<group>"; };
+		E344ECE5257F2FA100E8651F /* ViewFLowerMaterialVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewFLowerMaterialVC.xib; sourceTree = "<group>"; };
+		E344ECE9257F30BF00E8651F /* SendFlowersLIstVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendFlowersLIstVC.h; sourceTree = "<group>"; };
+		E344ECEA257F30BF00E8651F /* SendFlowersLIstVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendFlowersLIstVC.m; sourceTree = "<group>"; };
+		E344ECEB257F30BF00E8651F /* SendFlowersLIstVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendFlowersLIstVC.xib; sourceTree = "<group>"; };
 		E38EDD75257C066C0055CC7C /* OpensourceSDKVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpensourceSDKVC.h; sourceTree = "<group>"; };
 		E38EDD76257C066C0055CC7C /* OpensourceSDKVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpensourceSDKVC.m; sourceTree = "<group>"; };
 		E38EDD77257C066C0055CC7C /* OpensourceSDKVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpensourceSDKVC.xib; sourceTree = "<group>"; };
@@ -117,7 +132,16 @@
 				E337E18F257B0D300045328C /* SetingViewController.m */,
 				E337E194257B0D600045328C /* HomeViewController.h */,
 				E337E195257B0D600045328C /* HomeViewController.m */,
+				E344ECE3257F2FA100E8651F /* ViewFLowerMaterialVC.h */,
+				E344ECE4257F2FA100E8651F /* ViewFLowerMaterialVC.m */,
+				E344ECE5257F2FA100E8651F /* ViewFLowerMaterialVC.xib */,
 				E38EDD75257C066C0055CC7C /* OpensourceSDKVC.h */,
+				E344ECDA257F2D0700E8651F /* MakeGoodsFreshFlowerViewController.h */,
+				E344ECDB257F2D0700E8651F /* MakeGoodsFreshFlowerViewController.m */,
+				E344ECDC257F2D0700E8651F /* MakeGoodsFreshFlowerViewController.xib */,
+				E344ECE9257F30BF00E8651F /* SendFlowersLIstVC.h */,
+				E344ECEA257F30BF00E8651F /* SendFlowersLIstVC.m */,
+				E344ECEB257F30BF00E8651F /* SendFlowersLIstVC.xib */,
 				E38EDD76257C066C0055CC7C /* OpensourceSDKVC.m */,
 				E38EDD77257C066C0055CC7C /* OpensourceSDKVC.xib */,
 				E337E1A1257B313E0045328C /* opensourceSDKdata.plist */,
@@ -200,11 +224,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E344ECE7257F2FA100E8651F /* ViewFLowerMaterialVC.xib in Resources */,
 				E337E1A2257B313E0045328C /* opensourceSDKdata.plist in Resources */,
 				E337E180257AE8980045328C /* LaunchScreen.storyboard in Resources */,
 				E38EDD79257C066C0055CC7C /* OpensourceSDKVC.xib in Resources */,
 				E337E17D257AE8980045328C /* Assets.xcassets in Resources */,
 				E337E178257AE8980045328C /* Main.storyboard in Resources */,
+				E344ECDE257F2D0700E8651F /* MakeGoodsFreshFlowerViewController.xib in Resources */,
+				E344ECED257F30BF00E8651F /* SendFlowersLIstVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E344ECDD257F2D0700E8651F /* MakeGoodsFreshFlowerViewController.m in Sources */,
 				E337E183257AE8980045328C /* main.m in Sources */,
 				E337E175257AE8970045328C /* ViewController.m in Sources */,
 				E38EDD78257C066C0055CC7C /* OpensourceSDKVC.m in Sources */,
@@ -223,10 +251,12 @@
 				E337E17B257AE8980045328C /* KOKTemplateApp.xcdatamodeld in Sources */,
 				E337E1B8257B381E0045328C /* YYWeakProxy.m in Sources */,
 				E337E190257B0D300045328C /* SetingViewController.m in Sources */,
+				E344ECEC257F30BF00E8651F /* SendFlowersLIstVC.m in Sources */,
 				E3E52188257B5D9F00D0D7DB /* KOKWindowHelperVC.m in Sources */,
 				E337E16F257AE8970045328C /* AppDelegate.m in Sources */,
 				E337E172257AE8970045328C /* SceneDelegate.m in Sources */,
 				E337E196257B0D600045328C /* HomeViewController.m in Sources */,
+				E344ECE6257F2FA100E8651F /* ViewFLowerMaterialVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,13 +400,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 26C6TQKPPY;
+				DEVELOPMENT_TEAM = HYJ9TYA8XL;
 				INFOPLIST_FILE = KOKTemplateApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zhaoyang.sports.kok.KOKTemplateApp;
+				PRODUCT_BUNDLE_IDENTIFIER = FreshFlowers.Sports.KOK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -388,13 +418,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 26C6TQKPPY;
+				DEVELOPMENT_TEAM = HYJ9TYA8XL;
 				INFOPLIST_FILE = KOKTemplateApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = zhaoyang.sports.kok.KOKTemplateApp;
+				PRODUCT_BUNDLE_IDENTIFIER = FreshFlowers.Sports.KOK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

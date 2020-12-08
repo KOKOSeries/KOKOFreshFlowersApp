@@ -8,6 +8,10 @@
 #import "HomeViewController.h"
 #import "YYFPSLabel.h"
 #import "SceneDelegate.h"
+
+#import "MakeGoodsFreshFlowerViewController.h"
+#import "ViewFLowerMaterialVC.h"
+#import "SendFlowersLIstVC.h"
 @interface HomeViewController ()
 @property (nonatomic, strong) YYFPSLabel *fpsLabel;
 @end
@@ -31,6 +35,26 @@
 //    window2.windowLevel = 100000;
 //    window2.hidden = NO;
 //    [window2 makeKeyAndVisible];
+}
+#pragma mark - Make Fresh Flowers
+- (IBAction)makeGoodsFreshFlower:(UIButton *)sender {
+    
+    MakeGoodsFreshFlowerViewController *vc = [[MakeGoodsFreshFlowerViewController alloc]initWithNibName:@"MakeGoodsFreshFlowerViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+
+}
+
+- (IBAction)ViewMatarialFLower:(UIButton *)sender {
+    ViewFLowerMaterialVC *vc  = [[ViewFLowerMaterialVC alloc]initWithNibName:@"ViewFLowerMaterialVC" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)flowersLsit:(UIButton *)sender {
+    
+}
+- (IBAction)senderFlowerList:(UIButton *)sender {
+    SendFlowersLIstVC *vc = [[SendFlowersLIstVC alloc]initWithNibName:@"SendFlowersLIstVC" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
