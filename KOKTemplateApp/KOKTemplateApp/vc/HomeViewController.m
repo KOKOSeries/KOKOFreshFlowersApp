@@ -10,7 +10,6 @@
 #import "SceneDelegate.h"
 
 #import "MakeGoodsFreshFlowerViewController.h"
-#import "ViewFLowerMaterialVC.h"
 #import "SendFlowersLIstVC.h"
 @interface HomeViewController ()
 @property (nonatomic, strong) YYFPSLabel *fpsLabel;
@@ -43,12 +42,6 @@
     [self.navigationController pushViewController:vc animated:YES];
 
 }
-
-- (IBAction)ViewMatarialFLower:(UIButton *)sender {
-    ViewFLowerMaterialVC *vc  = [[ViewFLowerMaterialVC alloc]initWithNibName:@"ViewFLowerMaterialVC" bundle:nil];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-
 - (IBAction)flowersLsit:(UIButton *)sender {
     
 }

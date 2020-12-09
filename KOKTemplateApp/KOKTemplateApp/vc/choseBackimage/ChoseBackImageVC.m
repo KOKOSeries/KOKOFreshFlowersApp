@@ -1,21 +1,21 @@
 //
-//  ViewFLowerMaterialVC.m
+//  ChoseBackImageVC.m
 //  KOKTemplateApp
 //
-//  Created by KOK on 7/12/2020.
+//  Created by KOK on 8/12/2020.
 //
 
-#import "ViewFLowerMaterialVC.h"
+#import "ChoseBackImageVC.h"
 
-@interface ViewFLowerMaterialVC ()
+@interface ChoseBackImageVC ()
 
 @end
 
-@implementation ViewFLowerMaterialVC
+@implementation ChoseBackImageVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.title = @"Choose Back Image";
 }
 
 /*
