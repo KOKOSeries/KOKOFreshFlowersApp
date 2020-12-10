@@ -1,37 +1,24 @@
 //
-//  ViewFLowerMaterialVC.m
+//  RecordsVC.m
 //  KOKTemplateApp
 //
-//  Created by KOK on 7/12/2020.
+//  Created by JOY CHOW on 2020/12/10.
 //
 
-#import "ViewFLowerMaterialVC.h"
+#import "RecordsVC.h"
 #import "FlowerCCell.h"
-
-@interface ViewFLowerMaterialVC ()<UICollectionViewDelegate,UICollectionViewDataSource>
-{
-    FlowerCCell * _cellOld;
-}
+@interface RecordsVC ()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property(nonatomic,strong)UICollectionView *collectionView;
 @property(nonatomic,strong)NSMutableArray *dataArray;
 @end
 
-@implementation ViewFLowerMaterialVC
+@implementation RecordsVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Choose a Flower";
+    self.title = @"Records";
     [self.view addSubview:self.collectionView];
-    self.dataArray = [NSMutableArray array];
-    for (int i = 0; i < 5; i++) {
-        NSMutableDictionary * dic = [NSMutableDictionary dictionaryWithObject:[NSString stringWithFormat:@"flower%d",i] forKey:@"flower"];
-        
-        [dic setObject:@"NO" forKey:@"choose"];
-        if ([[ChooseModel sharedManager].flower isEqualToString:dic[@"flower"]]) {
-            [dic setObject:@"YES" forKey:@"choose"];
-        }
-        [self.dataArray addObject:dic];
-    }
+    self.dataArray = [[NSUserDefaults standardUserDefaults] objectForKey:@"records"];
     [self.collectionView reloadData];
 }
 #pragma mark - CollectionView 代理
@@ -46,25 +33,18 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     FlowerCCell *cell = (FlowerCCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"FlowerCCell" forIndexPath:indexPath];
     NSDictionary *dic = _dataArray[indexPath.row];
-    cell.img.image = [UIImage imageNamed:dic[@"flower"]];
-    if ([dic[@"choose"] isEqual:@"YES"]) {
-        cell.imgSelected.hidden = NO;
-        _cellOld = cell;
-    } else {
-        cell.imgSelected.hidden = YES;
-    }
+    cell.img.image = [UIImage imageWithData:dic[@"image"]];
     cell.img.backgroundColor = UIColor.whiteColor;
+    cell.label.text = [self time_timestampToString:dic[@"time"]];
     return cell;
 }
--(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    FlowerCCell *cell = (FlowerCCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    cell.imgSelected.hidden = NO;
-    NSDictionary *dic = _dataArray[indexPath.row];
-    [ChooseModel sharedManager].flower = dic[@"flower"];
-    if (_cellOld) {
-        _cellOld.imgSelected.hidden = YES;
-    }
-    _cellOld = cell;
+//时间戳转字符串
+- (NSString *)time_timestampToString:(NSString *)timestamp{
+    NSDate *confromTimesp = [NSDate dateWithTimeIntervalSince1970:timestamp.integerValue];
+    NSDateFormatter *dateFormat=[[NSDateFormatter alloc]init];
+     [dateFormat setDateFormat:@"yyyy-MM-dd HH:mm"];
+    NSString* string=[dateFormat stringFromDate:confromTimesp];
+    return string;
 }
 
 #pragma mark - set/get
@@ -94,3 +74,4 @@
 */
 
 @end
+

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40A9D1892580C5F200F7617A /* FlowerCCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A9D1872580C5F200F7617A /* FlowerCCell.m */; };
+		40A9D18A2580C5F200F7617A /* FlowerCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A9D1882580C5F200F7617A /* FlowerCCell.xib */; };
+		40A9D18E2580E0EB00F7617A /* ChooseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A9D18D2580E0EB00F7617A /* ChooseModel.m */; };
+		40A9D1922580E77800F7617A /* NumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A9D1912580E77800F7617A /* NumberView.m */; };
+		40A9D1952580E78800F7617A /* NumberView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A9D1942580E78800F7617A /* NumberView.xib */; };
+		40A9D1992580EB0200F7617A /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A9D1972580EB0200F7617A /* UIView+Addition.m */; };
+		40A9D19E2580F0AB00F7617A /* FinishVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A9D19C2580F0AB00F7617A /* FinishVC.m */; };
+		40A9D19F2580F0AB00F7617A /* FinishVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A9D19D2580F0AB00F7617A /* FinishVC.xib */; };
+		40A9D1A42581FB0F00F7617A /* RecordsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A9D1A22581FB0F00F7617A /* RecordsVC.m */; };
+		40A9D1A52581FB0F00F7617A /* RecordsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A9D1A32581FB0F00F7617A /* RecordsVC.xib */; };
 		E337E16F257AE8970045328C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E337E16E257AE8970045328C /* AppDelegate.m */; };
 		E337E172257AE8970045328C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E337E171257AE8970045328C /* SceneDelegate.m */; };
 		E337E175257AE8970045328C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E337E174257AE8970045328C /* ViewController.m */; };
@@ -49,6 +59,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40A9D1832580C36600F7617A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		40A9D1862580C5F200F7617A /* FlowerCCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowerCCell.h; sourceTree = "<group>"; };
+		40A9D1872580C5F200F7617A /* FlowerCCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerCCell.m; sourceTree = "<group>"; };
+		40A9D1882580C5F200F7617A /* FlowerCCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlowerCCell.xib; sourceTree = "<group>"; };
+		40A9D18C2580E0EB00F7617A /* ChooseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChooseModel.h; sourceTree = "<group>"; };
+		40A9D18D2580E0EB00F7617A /* ChooseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChooseModel.m; sourceTree = "<group>"; };
+		40A9D1902580E77800F7617A /* NumberView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberView.h; sourceTree = "<group>"; };
+		40A9D1912580E77800F7617A /* NumberView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberView.m; sourceTree = "<group>"; };
+		40A9D1942580E78800F7617A /* NumberView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberView.xib; sourceTree = "<group>"; };
+		40A9D1972580EB0200F7617A /* UIView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Addition.m"; sourceTree = "<group>"; };
+		40A9D1982580EB0200F7617A /* UIView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Addition.h"; sourceTree = "<group>"; };
+		40A9D19B2580F0AB00F7617A /* FinishVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinishVC.h; sourceTree = "<group>"; };
+		40A9D19C2580F0AB00F7617A /* FinishVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinishVC.m; sourceTree = "<group>"; };
+		40A9D19D2580F0AB00F7617A /* FinishVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FinishVC.xib; sourceTree = "<group>"; };
+		40A9D1A12581FB0F00F7617A /* RecordsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordsVC.h; sourceTree = "<group>"; };
+		40A9D1A22581FB0F00F7617A /* RecordsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordsVC.m; sourceTree = "<group>"; };
+		40A9D1A32581FB0F00F7617A /* RecordsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordsVC.xib; sourceTree = "<group>"; };
 		E337E16A257AE8970045328C /* KOKTemplateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KOKTemplateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E337E16D257AE8970045328C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E337E16E257AE8970045328C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -148,6 +175,7 @@
 				E3E5218B257B5E0600D0D7DB /* KOKWIndow.m */,
 				E3E52186257B5D9F00D0D7DB /* KOKWindowHelperVC.h */,
 				E3E52187257B5D9F00D0D7DB /* KOKWindowHelperVC.m */,
+				40A9D1832580C36600F7617A /* PrefixHeader.pch */,
 				E337E1B2257B381E0045328C /* ThirtyPart */,
 				E337E192257B0D370045328C /* vc */,
 				E337E176257AE8980045328C /* Main.storyboard */,
@@ -240,6 +268,22 @@
 				E344ECE3257F2FA100E8651F /* ViewFLowerMaterialVC.h */,
 				E344ECE4257F2FA100E8651F /* ViewFLowerMaterialVC.m */,
 				E344ECE5257F2FA100E8651F /* ViewFLowerMaterialVC.xib */,
+				40A9D1862580C5F200F7617A /* FlowerCCell.h */,
+				40A9D1872580C5F200F7617A /* FlowerCCell.m */,
+				40A9D1882580C5F200F7617A /* FlowerCCell.xib */,
+				40A9D18C2580E0EB00F7617A /* ChooseModel.h */,
+				40A9D18D2580E0EB00F7617A /* ChooseModel.m */,
+				40A9D1902580E77800F7617A /* NumberView.h */,
+				40A9D1912580E77800F7617A /* NumberView.m */,
+				40A9D1942580E78800F7617A /* NumberView.xib */,
+				40A9D1982580EB0200F7617A /* UIView+Addition.h */,
+				40A9D1972580EB0200F7617A /* UIView+Addition.m */,
+				40A9D19B2580F0AB00F7617A /* FinishVC.h */,
+				40A9D19C2580F0AB00F7617A /* FinishVC.m */,
+				40A9D19D2580F0AB00F7617A /* FinishVC.xib */,
+				40A9D1A12581FB0F00F7617A /* RecordsVC.h */,
+				40A9D1A22581FB0F00F7617A /* RecordsVC.m */,
+				40A9D1A32581FB0F00F7617A /* RecordsVC.xib */,
 			);
 			path = ChoseFlowerType;
 			sourceTree = "<group>";
@@ -310,12 +354,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A9D18A2580C5F200F7617A /* FlowerCCell.xib in Resources */,
+				40A9D1A52581FB0F00F7617A /* RecordsVC.xib in Resources */,
 				E3B407D3257FFAAC00C0C88D /* vase5.jpg in Resources */,
 				E344ECE7257F2FA100E8651F /* ViewFLowerMaterialVC.xib in Resources */,
 				E337E1A2257B313E0045328C /* opensourceSDKdata.plist in Resources */,
 				E337E180257AE8980045328C /* LaunchScreen.storyboard in Resources */,
 				E3B407D2257FFAAC00C0C88D /* vase4.jpeg in Resources */,
 				E3B407D5257FFAAC00C0C88D /* vase2.jpeg in Resources */,
+				40A9D19F2580F0AB00F7617A /* FinishVC.xib in Resources */,
 				E38EDD79257C066C0055CC7C /* OpensourceSDKVC.xib in Resources */,
 				E3B407C5257FF83500C0C88D /* ChooseVaseVC.xib in Resources */,
 				E3B407E2257FFB3000C0C88D /* ChoseBackImageVC.xib in Resources */,
@@ -331,6 +378,7 @@
 				E3B407DB257FFAAC00C0C88D /* vase8.jpg in Resources */,
 				E3B407D7257FFAAC00C0C88D /* vase3.jpg in Resources */,
 				E3B407D4257FFAAC00C0C88D /* vase10.jpeg in Resources */,
+				40A9D1952580E78800F7617A /* NumberView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,24 +389,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A9D1992580EB0200F7617A /* UIView+Addition.m in Sources */,
 				E344ECDD257F2D0700E8651F /* MakeGoodsFreshFlowerViewController.m in Sources */,
 				E337E183257AE8980045328C /* main.m in Sources */,
 				E3B407C4257FF83500C0C88D /* ChooseVaseVC.m in Sources */,
 				E337E175257AE8970045328C /* ViewController.m in Sources */,
 				E38EDD78257C066C0055CC7C /* OpensourceSDKVC.m in Sources */,
+				40A9D1922580E77800F7617A /* NumberView.m in Sources */,
 				E3B407E9257FFD5800C0C88D /* PreFlowerVC.m in Sources */,
+				40A9D18E2580E0EB00F7617A /* ChooseModel.m in Sources */,
 				E337E1B9257B381E0045328C /* YYFPSLabel.m in Sources */,
 				E3E5218C257B5E0600D0D7DB /* KOKWIndow.m in Sources */,
 				E3B407E1257FFB3000C0C88D /* ChoseBackImageVC.m in Sources */,
+				40A9D1892580C5F200F7617A /* FlowerCCell.m in Sources */,
 				E337E17B257AE8980045328C /* KOKTemplateApp.xcdatamodeld in Sources */,
 				E337E1B8257B381E0045328C /* YYWeakProxy.m in Sources */,
 				E337E190257B0D300045328C /* SetingViewController.m in Sources */,
 				E344ECEC257F30BF00E8651F /* SendFlowersLIstVC.m in Sources */,
+				40A9D1A42581FB0F00F7617A /* RecordsVC.m in Sources */,
 				E3E52188257B5D9F00D0D7DB /* KOKWindowHelperVC.m in Sources */,
 				E337E16F257AE8970045328C /* AppDelegate.m in Sources */,
 				E337E172257AE8970045328C /* SceneDelegate.m in Sources */,
 				E337E196257B0D600045328C /* HomeViewController.m in Sources */,
 				E344ECE6257F2FA100E8651F /* ViewFLowerMaterialVC.m in Sources */,
+				40A9D19E2580F0AB00F7617A /* FinishVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +557,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HYJ9TYA8XL;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KOKTemplateApp/PrefixHeader.pch";
 				INFOPLIST_FILE = KOKTemplateApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -511,7 +566,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FreshFlowers.Sports.KOK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -522,6 +577,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HYJ9TYA8XL;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KOKTemplateApp/PrefixHeader.pch";
 				INFOPLIST_FILE = KOKTemplateApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -530,7 +586,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = FreshFlowers.Sports.KOK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
