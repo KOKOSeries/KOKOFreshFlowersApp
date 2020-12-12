@@ -61,6 +61,7 @@
     cell.imgSelected.hidden = NO;
     NSDictionary *dic = _dataArray[indexPath.row];
     [ChooseModel sharedManager].vase = dic[@"vase"];
+    self.vaseBlock(dic[@"vase"]);
     if (_cellOld) {
         _cellOld.imgSelected.hidden = YES;
     }

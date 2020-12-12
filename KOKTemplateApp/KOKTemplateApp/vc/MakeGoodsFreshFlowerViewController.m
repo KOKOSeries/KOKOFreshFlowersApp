@@ -14,7 +14,12 @@
 #import "FinishVC.h"
 #import "RecordsVC.h"
 @interface MakeGoodsFreshFlowerViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *vaseImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *flowerImageVIew;
+@property (weak, nonatomic) IBOutlet UIButton *sendBtn;
+@property (weak, nonatomic) IBOutlet UIButton *recordsBtn;
 @property (nonatomic, strong) NumberView *numberView;
+
 @end
 
 @implementation MakeGoodsFreshFlowerViewController
@@ -22,28 +27,50 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Make Fresh Flower";
-    
     _numberView = [NumberView newView];
     [self.view addSubview:_numberView];
+    self.sendBtn.layer.cornerRadius = 18;
+    self.sendBtn.layer.masksToBounds = YES;
+    self.recordsBtn.layer.cornerRadius = 9;
+    self.recordsBtn.layer.masksToBounds = YES;
+    //    [_numberView show];
+    [ChooseModel sharedManager].number = @"1";
 }
 - (IBAction)makeFreshFlowerExample:(UIButton *)sender {
     FinishVC *vc = [[FinishVC alloc]initWithNibName:@"FinishVC" bundle:nil];
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (IBAction)ChooseVase:(UIButton *)sender {
-    
     ChooseVaseVC *vc = [[ChooseVaseVC alloc]initWithNibName:@"ChooseVaseVC" bundle:nil];
+    vc.vaseBlock = ^(id  _Nullable data) {
+        self.vaseImageView.image = [UIImage imageNamed:(NSString *)data];
+    };
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (IBAction)ChooseFlowerType:(UIButton *)sender {
     ViewFLowerMaterialVC *vc  = [[ViewFLowerMaterialVC alloc]initWithNibName:@"ViewFLowerMaterialVC" bundle:nil];
+    vc.flowerTypeblock = ^(id data) {
+        NSLog(@"%@",data);
+        self.flowerImageVIew.image = [UIImage imageNamed:(NSString *)data];
+    };
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (IBAction)ChooseFlowerNumber:(UIButton *)sender {
-    [_numberView show];
+    UIAlertController *vc = [UIAlertController alertControllerWithTitle:@"Choose Flowwer Numbers" message:@"Default is 1 flowers" preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertAction *oneAction = [UIAlertAction actionWithTitle:@"1 flowers" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [ChooseModel sharedManager].number = @"1";
+    }];
     
+    UIAlertAction *twoAction = [UIAlertAction actionWithTitle:@"2 flowers" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [ChooseModel sharedManager].number = @"2";
+    }];
+    
+    [vc addAction:oneAction];
+    [vc addAction:twoAction];
+    
+    [self presentViewController:vc animated:YES completion:nil];
 }
-- (IBAction)ChooseBackColor:(UIButton *)sender {
+- (IBAction)Eample:(UIButton *)sender {
     
 }
 - (IBAction)ChooseBackImage:(UIButton *)sender {
@@ -54,6 +81,5 @@
     PreFlowerVC *vc = [[PreFlowerVC alloc]initWithNibName:@"PreFlowerVC" bundle:nil];
     
     [self.navigationController pushViewController:vc animated:YES];
-    
 }
 @end

@@ -11,6 +11,7 @@
 
 #import "MakeGoodsFreshFlowerViewController.h"
 #import "SendFlowersLIstVC.h"
+#import "RecordsVC.h"
 @interface HomeViewController ()
 @property (nonatomic, strong) YYFPSLabel *fpsLabel;
 @end
@@ -43,7 +44,8 @@
 
 }
 - (IBAction)flowersLsit:(UIButton *)sender {
-    
+    RecordsVC *vc = [[RecordsVC alloc]initWithNibName:@"RecordsVC" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 - (IBAction)senderFlowerList:(UIButton *)sender {
     SendFlowersLIstVC *vc = [[SendFlowersLIstVC alloc]initWithNibName:@"SendFlowersLIstVC" bundle:nil];

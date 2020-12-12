@@ -44,7 +44,7 @@
     
     UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(SCREEN_WIDTH - 120, 20, 80, 40);
-    [button setTitleColor:UIColorFromRGB(0x202d39) forState:0];
+    [button setTitleColor:[UIColor whiteColor] forState:0];
     [button setTitle:@"save" forState:0];
     [self.navigationController.navigationBar addSubview:button];
     [button addTarget:self action:@selector(saveData) forControlEvents:(UIControlEventTouchUpInside)];

@@ -34,7 +34,9 @@
     FlowerCCell *cell = (FlowerCCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"FlowerCCell" forIndexPath:indexPath];
     NSDictionary *dic = _dataArray[indexPath.row];
     cell.img.image = [UIImage imageWithData:dic[@"image"]];
-    cell.img.backgroundColor = UIColor.whiteColor;
+//    cell.backgroundColor = []
+    cell.backgroundColor= [UIColor colorNamed:@"tintColor"];
+    cell.img.backgroundColor = [UIColor colorNamed:@"tintColor"];
     cell.label.text = [self time_timestampToString:dic[@"time"]];
     return cell;
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LrX-1a-2xu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LrX-1a-2xu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -358,7 +358,7 @@
             </objects>
             <point key="canvasLocation" x="318.84057971014494" y="-213.61607142857142"/>
         </scene>
-        <!--Home-->
+        <!--Fresh Flower-->
         <scene sceneID="lMP-7S-eM5">
             <objects>
                 <viewController id="Kwg-2e-L4H" customClass="HomeViewController" sceneMemberID="viewController">
@@ -366,18 +366,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaJ-UG-ism">
-                                <rect key="frame" x="134" y="387" width="131" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Send Fresh Flower ">
-                                    <color key="titleColor" name="textColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="senderFlowerList:" destination="Kwg-2e-L4H" eventType="touchUpInside" id="Xz6-Z8-c0V"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpr-1n-8qR">
-                                <rect key="frame" x="135" y="325" width="116" height="30"/>
+                                <rect key="frame" x="18" y="211" width="116" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Fresh Flower List">
                                     <color key="titleColor" name="textColor"/>
@@ -387,7 +377,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xme-bF-vph">
-                                <rect key="frame" x="127" y="248" width="129" height="30"/>
+                                <rect key="frame" x="18" y="172" width="129" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Make Fresh Flower">
                                     <color key="titleColor" name="textColor"/>
@@ -396,12 +386,31 @@
                                     <action selector="makeGoodsFreshFlower:" destination="Kwg-2e-L4H" eventType="touchUpInside" id="fH9-8j-l6a"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaJ-UG-ism">
+                                <rect key="frame" x="17" y="256" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send Fresh Flower ">
+                                    <color key="titleColor" name="textColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="senderFlowerList:" destination="Kwg-2e-L4H" eventType="touchUpInside" id="Xz6-Z8-c0V"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="164-Ph-V7S">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ar0-qF-GGt"/>
                         <color key="backgroundColor" name="tintColor"/>
                         <color key="tintColor" name="tintColor"/>
+                        <constraints>
+                            <constraint firstItem="164-Ph-V7S" firstAttribute="leading" secondItem="ar0-qF-GGt" secondAttribute="leading" id="33U-0h-ZGp"/>
+                            <constraint firstItem="164-Ph-V7S" firstAttribute="trailing" secondItem="ar0-qF-GGt" secondAttribute="trailing" id="36Y-nS-lHD"/>
+                            <constraint firstItem="164-Ph-V7S" firstAttribute="top" secondItem="yjY-sy-w6E" secondAttribute="top" id="7oJ-No-AQ2"/>
+                            <constraint firstAttribute="bottom" secondItem="164-Ph-V7S" secondAttribute="bottom" id="avg-gZ-Yjt"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" leftItemsSupplementBackButton="YES" id="Cf4-5x-TqF"/>
+                    <navigationItem key="navigationItem" title="Fresh Flower" leftItemsSupplementBackButton="YES" id="Cf4-5x-TqF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jhs-hM-h9A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
