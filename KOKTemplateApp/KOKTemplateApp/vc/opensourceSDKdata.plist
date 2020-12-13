@@ -3,19 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>opensource</key>
-	<array>
-		<dict>
-			<key>url</key>
-			<string>https://sdwebimage.github.io/</string>
-			<key>name</key>
-			<string>SDWebImage</string>
-		</dict>
-		<dict>
-			<key>url</key>
-			<string>https://sdwebimage.github.io/</string>
-			<key>name</key>
-			<string>YYFPS</string>
-		</dict>
-	</array>
+	<array/>
 </dict>
 </plist>

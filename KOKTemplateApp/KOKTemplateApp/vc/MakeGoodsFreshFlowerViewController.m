@@ -13,12 +13,14 @@
 #import "NumberView.h"
 #import "FinishVC.h"
 #import "RecordsVC.h"
+#import "ExampleVC.h"
 @interface MakeGoodsFreshFlowerViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *vaseImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *flowerImageVIew;
 @property (weak, nonatomic) IBOutlet UIButton *sendBtn;
 @property (weak, nonatomic) IBOutlet UIButton *recordsBtn;
 @property (nonatomic, strong) NumberView *numberView;
+@property (weak, nonatomic) IBOutlet UILabel *flowersNumers;
 
 @end
 
@@ -59,10 +61,12 @@
     UIAlertController *vc = [UIAlertController alertControllerWithTitle:@"Choose Flowwer Numbers" message:@"Default is 1 flowers" preferredStyle:UIAlertControllerStyleActionSheet];
     UIAlertAction *oneAction = [UIAlertAction actionWithTitle:@"1 flowers" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [ChooseModel sharedManager].number = @"1";
+        self.flowersNumers.text = @"1 flowers";
     }];
     
     UIAlertAction *twoAction = [UIAlertAction actionWithTitle:@"2 flowers" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [ChooseModel sharedManager].number = @"2";
+        self.flowersNumers.text = @"2 flowers";
     }];
     
     [vc addAction:oneAction];
@@ -71,7 +75,8 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 - (IBAction)Eample:(UIButton *)sender {
-    
+    ExampleVC *vc = [[ExampleVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 - (IBAction)ChooseBackImage:(UIButton *)sender {
     RecordsVC *vc = [[RecordsVC alloc]initWithNibName:@"RecordsVC" bundle:nil];

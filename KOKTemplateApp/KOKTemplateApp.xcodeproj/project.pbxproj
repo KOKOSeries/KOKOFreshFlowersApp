@@ -54,6 +54,13 @@
 		E3B407E2257FFB3000C0C88D /* ChoseBackImageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3B407E0257FFB3000C0C88D /* ChoseBackImageVC.xib */; };
 		E3B407E9257FFD5800C0C88D /* PreFlowerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B407E7257FFD5700C0C88D /* PreFlowerVC.m */; };
 		E3B407EA257FFD5800C0C88D /* PreFlowerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3B407E8257FFD5800C0C88D /* PreFlowerVC.xib */; };
+		E3B409212585891C00C0C88D /* Make.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3B409202585891C00C0C88D /* Make.jpg */; };
+		E3B409272585897100C0C88D /* ExampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B409252585897100C0C88D /* ExampleVC.m */; };
+		E3B409282585897100C0C88D /* ExampleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3B409262585897100C0C88D /* ExampleVC.xib */; };
+		E3B4092C258589F900C0C88D /* choose a vase.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B4092B258589F900C0C88D /* choose a vase.png */; };
+		E3B4092F25858A9300C0C88D /* choose a flower type.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B4092E25858A9300C0C88D /* choose a flower type.png */; };
+		E3B409322585908700C0C88D /* complte.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B409312585908700C0C88D /* complte.png */; };
+		E3B40935258591FC00C0C88D /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = E3B40934258591FC00C0C88D /* save.png */; };
 		E3E52188257B5D9F00D0D7DB /* KOKWindowHelperVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E52187257B5D9F00D0D7DB /* KOKWindowHelperVC.m */; };
 		E3E5218C257B5E0600D0D7DB /* KOKWIndow.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E5218B257B5E0600D0D7DB /* KOKWIndow.m */; };
 /* End PBXBuildFile section */
@@ -129,6 +136,14 @@
 		E3B407E6257FFD5700C0C88D /* PreFlowerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreFlowerVC.h; sourceTree = "<group>"; };
 		E3B407E7257FFD5700C0C88D /* PreFlowerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreFlowerVC.m; sourceTree = "<group>"; };
 		E3B407E8257FFD5800C0C88D /* PreFlowerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreFlowerVC.xib; sourceTree = "<group>"; };
+		E3B409202585891C00C0C88D /* Make.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Make.jpg; sourceTree = "<group>"; };
+		E3B409242585897100C0C88D /* ExampleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleVC.h; sourceTree = "<group>"; };
+		E3B409252585897100C0C88D /* ExampleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleVC.m; sourceTree = "<group>"; };
+		E3B409262585897100C0C88D /* ExampleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleVC.xib; sourceTree = "<group>"; };
+		E3B4092B258589F900C0C88D /* choose a vase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choose a vase.png"; sourceTree = "<group>"; };
+		E3B4092E25858A9300C0C88D /* choose a flower type.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "choose a flower type.png"; sourceTree = "<group>"; };
+		E3B409312585908700C0C88D /* complte.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = complte.png; sourceTree = "<group>"; };
+		E3B40934258591FC00C0C88D /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
 		E3E52186257B5D9F00D0D7DB /* KOKWindowHelperVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KOKWindowHelperVC.h; sourceTree = "<group>"; };
 		E3E52187257B5D9F00D0D7DB /* KOKWindowHelperVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KOKWindowHelperVC.m; sourceTree = "<group>"; };
 		E3E5218A257B5E0600D0D7DB /* KOKWIndow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KOKWIndow.h; sourceTree = "<group>"; };
@@ -191,6 +206,7 @@
 		E337E192257B0D370045328C /* vc */ = {
 			isa = PBXGroup;
 			children = (
+				E3B409232585895600C0C88D /* Example */,
 				E3B407EC257FFD6500C0C88D /* PreFlower */,
 				E3B407E4257FFC7500C0C88D /* ChoseFlowerType */,
 				E3B407DD257FFABB00C0C88D /* choseBackimage */,
@@ -298,6 +314,21 @@
 			path = PreFlower;
 			sourceTree = "<group>";
 		};
+		E3B409232585895600C0C88D /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				E3B409242585897100C0C88D /* ExampleVC.h */,
+				E3B409252585897100C0C88D /* ExampleVC.m */,
+				E3B4092B258589F900C0C88D /* choose a vase.png */,
+				E3B40934258591FC00C0C88D /* save.png */,
+				E3B409262585897100C0C88D /* ExampleVC.xib */,
+				E3B409312585908700C0C88D /* complte.png */,
+				E3B4092E25858A9300C0C88D /* choose a flower type.png */,
+				E3B409202585891C00C0C88D /* Make.jpg */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -357,13 +388,17 @@
 				40A9D18A2580C5F200F7617A /* FlowerCCell.xib in Resources */,
 				40A9D1A52581FB0F00F7617A /* RecordsVC.xib in Resources */,
 				E3B407D3257FFAAC00C0C88D /* vase5.jpg in Resources */,
+				E3B409212585891C00C0C88D /* Make.jpg in Resources */,
 				E344ECE7257F2FA100E8651F /* ViewFLowerMaterialVC.xib in Resources */,
+				E3B4092C258589F900C0C88D /* choose a vase.png in Resources */,
+				E3B409322585908700C0C88D /* complte.png in Resources */,
 				E337E1A2257B313E0045328C /* opensourceSDKdata.plist in Resources */,
 				E337E180257AE8980045328C /* LaunchScreen.storyboard in Resources */,
 				E3B407D2257FFAAC00C0C88D /* vase4.jpeg in Resources */,
 				E3B407D5257FFAAC00C0C88D /* vase2.jpeg in Resources */,
 				40A9D19F2580F0AB00F7617A /* FinishVC.xib in Resources */,
 				E38EDD79257C066C0055CC7C /* OpensourceSDKVC.xib in Resources */,
+				E3B409282585897100C0C88D /* ExampleVC.xib in Resources */,
 				E3B407C5257FF83500C0C88D /* ChooseVaseVC.xib in Resources */,
 				E3B407E2257FFB3000C0C88D /* ChoseBackImageVC.xib in Resources */,
 				E3B407DA257FFAAC00C0C88D /* vase9.webp in Resources */,
@@ -374,6 +409,8 @@
 				E344ECDE257F2D0700E8651F /* MakeGoodsFreshFlowerViewController.xib in Resources */,
 				E3B407D9257FFAAC00C0C88D /* vase7.jpeg in Resources */,
 				E344ECED257F30BF00E8651F /* SendFlowersLIstVC.xib in Resources */,
+				E3B4092F25858A9300C0C88D /* choose a flower type.png in Resources */,
+				E3B40935258591FC00C0C88D /* save.png in Resources */,
 				E3B407D8257FFAAC00C0C88D /* vase6.jpg in Resources */,
 				E3B407DB257FFAAC00C0C88D /* vase8.jpg in Resources */,
 				E3B407D7257FFAAC00C0C88D /* vase3.jpg in Resources */,
@@ -413,6 +450,7 @@
 				E337E196257B0D600045328C /* HomeViewController.m in Sources */,
 				E344ECE6257F2FA100E8651F /* ViewFLowerMaterialVC.m in Sources */,
 				40A9D19E2580F0AB00F7617A /* FinishVC.m in Sources */,
+				E3B409272585897100C0C88D /* ExampleVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,7 +594,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T7MU97KKHW;
+				DEVELOPMENT_TEAM = K6KCWTJDMK;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KOKTemplateApp/PrefixHeader.pch";
 				INFOPLIST_FILE = KOKTemplateApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -576,7 +614,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T7MU97KKHW;
+				DEVELOPMENT_TEAM = K6KCWTJDMK;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KOKTemplateApp/PrefixHeader.pch";
 				INFOPLIST_FILE = KOKTemplateApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

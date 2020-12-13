@@ -13,6 +13,8 @@
 #import "SendFlowersLIstVC.h"
 #import "RecordsVC.h"
 @interface HomeViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *logolabel;
+@property (weak, nonatomic) IBOutlet UIImageView *logo;
 @property (nonatomic, strong) YYFPSLabel *fpsLabel;
 @end
 
@@ -20,7 +22,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    _fpsLabel = [YYFPSLabel new];
+    self.logolabel.layer.cornerRadius = 20;
+    self.logolabel.layer.masksToBounds = YES;
+    self.logolabel.layer.borderColor = [UIColor colorNamed:@"tintColor"].CGColor;
+    self.logo.layer.cornerRadius = 20;
+    self.logo.layer.masksToBounds = YES;
+    //    _fpsLabel = [YYFPSLabel new];
 //    _fpsLabel.frame = CGRectMake(200, 200, 50, 30);
 //    [_fpsLabel sizeToFit];
 //    [self.view addSubview:_fpsLabel];

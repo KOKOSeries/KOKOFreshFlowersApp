@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MakeGoodsFreshFlowerViewController">
             <connections>
                 <outlet property="flowerImageVIew" destination="DQP-Gf-J9z" id="f9p-Ir-d0Q"/>
+                <outlet property="flowersNumers" destination="e9r-k0-9ih" id="4jm-U8-rGb"/>
                 <outlet property="recordsBtn" destination="zq0-IE-i9P" id="vn2-j2-KD3"/>
                 <outlet property="sendBtn" destination="3pG-dS-Bqv" id="SD1-KS-wEJ"/>
                 <outlet property="vaseImageView" destination="HIQ-5u-Xx0" id="gnQ-48-hJK"/>
@@ -37,8 +38,8 @@ Choose a vase</string>
                                 <action selector="ChooseVase:" destination="-1" eventType="touchUpInside" id="yuU-kU-WyK"/>
                             </connections>
                         </button>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scissors.badge.ellipsis" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HIQ-5u-Xx0">
-                            <rect key="frame" x="20" y="11" width="62" height="58.5"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HIQ-5u-Xx0">
+                            <rect key="frame" x="20" y="10.5" width="60" height="59"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="tintColor" name="tintColor"/>
                             <constraints>
@@ -47,7 +48,7 @@ Choose a vase</string>
                             </constraints>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemGrayColor"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="iyY-41-DO1" firstAttribute="centerY" secondItem="WDU-aK-kbu" secondAttribute="centerY" id="Jd2-ow-nIG"/>
                         <constraint firstAttribute="height" constant="80" id="W34-bQ-TSY"/>
@@ -59,8 +60,8 @@ Choose a vase</string>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jrb-Lo-AUZ" userLabel="Choose flower type">
                     <rect key="frame" x="0.0" y="124" width="414" height="80"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scissors.badge.ellipsis" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DQP-Gf-J9z">
-                            <rect key="frame" x="20" y="11" width="62" height="58.5"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="DQP-Gf-J9z">
+                            <rect key="frame" x="20" y="10.5" width="60" height="59"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="tintColor" name="tintColor"/>
                             <constraints>
@@ -76,7 +77,7 @@ Choose a vase</string>
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemGray4Color"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="DQP-Gf-J9z" firstAttribute="leading" secondItem="jrb-Lo-AUZ" secondAttribute="leading" constant="20" id="BnF-iH-IGS"/>
                         <constraint firstAttribute="height" constant="80" id="Ffp-it-zwN"/>
@@ -86,36 +87,8 @@ Choose a vase</string>
                         <constraint firstItem="u2Y-Ds-aOG" firstAttribute="centerY" secondItem="jrb-Lo-AUZ" secondAttribute="centerY" id="koz-hI-fJS"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ltd-e6-oKq" userLabel="Choose flower Numbers">
-                    <rect key="frame" x="0.0" y="214" width="414" height="80"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMd-nd-s6o">
-                            <rect key="frame" x="100" y="25" width="165" height="30"/>
-                            <state key="normal" title="Choose flower Numbers"/>
-                            <connections>
-                                <action selector="ChooseFlowerNumber:" destination="-1" eventType="touchUpInside" id="eLm-5f-zag"/>
-                            </connections>
-                        </button>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scissors.badge.ellipsis" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Bn2-Sr-kHI">
-                            <rect key="frame" x="20" y="11" width="62" height="58.5"/>
-                            <color key="tintColor" name="tintColor"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="60" id="Rap-H8-Gw5"/>
-                                <constraint firstAttribute="height" constant="60" id="hAS-HG-SJC"/>
-                            </constraints>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstItem="Bn2-Sr-kHI" firstAttribute="leading" secondItem="ltd-e6-oKq" secondAttribute="leading" constant="20" id="7N8-Z9-o7j"/>
-                        <constraint firstItem="Bn2-Sr-kHI" firstAttribute="centerY" secondItem="ltd-e6-oKq" secondAttribute="centerY" id="GMZ-dh-joY"/>
-                        <constraint firstItem="AMd-nd-s6o" firstAttribute="leading" secondItem="Bn2-Sr-kHI" secondAttribute="trailing" constant="20" id="ISd-fg-Myi"/>
-                        <constraint firstAttribute="height" constant="80" id="jA1-e4-kth"/>
-                        <constraint firstItem="AMd-nd-s6o" firstAttribute="centerY" secondItem="ltd-e6-oKq" secondAttribute="centerY" id="wGu-Er-u0t"/>
-                    </constraints>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Pm-w8-dp3">
-                    <rect key="frame" x="10" y="304" width="394" height="128"/>
+                    <rect key="frame" x="10" y="349" width="394" height="128"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pG-dS-Bqv">
                             <rect key="frame" x="20" y="25" width="354" height="60"/>
@@ -133,11 +106,12 @@ Choose a vase</string>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zq0-IE-i9P">
-                            <rect key="frame" x="317" y="95" width="57" height="30"/>
-                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <rect key="frame" x="324" y="95" width="50" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="UhX-LJ-MhU"/>
                             </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <state key="normal" title="Records">
                                 <color key="titleColor" systemColor="systemBlueColor"/>
                             </state>
@@ -146,8 +120,9 @@ Choose a vase</string>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDi-qa-d4R">
-                            <rect key="frame" x="21" y="97" width="51" height="30"/>
+                            <rect key="frame" x="25" y="99" width="45" height="28"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                             <state key="normal" title="Eample"/>
                             <connections>
                                 <action selector="Eample:" destination="-1" eventType="touchUpInside" id="Ri6-Nk-ONH"/>
@@ -164,29 +139,47 @@ Choose a vase</string>
                         <constraint firstAttribute="trailing" secondItem="3pG-dS-Bqv" secondAttribute="trailing" constant="20" id="pm9-Ne-jSG"/>
                     </constraints>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMd-nd-s6o">
+                    <rect key="frame" x="27" y="228" width="136" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="vWk-Kk-aMR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="Choose flower Numbers"/>
+                    <connections>
+                        <action selector="ChooseFlowerNumber:" destination="-1" eventType="touchUpInside" id="eLm-5f-zag"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 flowers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9r-k0-9ih">
+                    <rect key="frame" x="183" y="241.5" width="50" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="WDU-aK-kbu" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="2JB-ij-LWl"/>
-                <constraint firstItem="ltd-e6-oKq" firstAttribute="top" secondItem="jrb-Lo-AUZ" secondAttribute="bottom" constant="10" id="2Wx-WA-Xcg"/>
                 <constraint firstItem="jrb-Lo-AUZ" firstAttribute="top" secondItem="WDU-aK-kbu" secondAttribute="bottom" id="3cF-Bb-7Yz"/>
+                <constraint firstItem="AMd-nd-s6o" firstAttribute="top" secondItem="jrb-Lo-AUZ" secondAttribute="bottom" constant="24" id="508-Sf-ifR"/>
                 <constraint firstItem="4Pm-w8-dp3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="6qe-jp-RW1"/>
                 <constraint firstAttribute="trailing" secondItem="jrb-Lo-AUZ" secondAttribute="trailing" id="AWs-CD-kEr"/>
+                <constraint firstItem="e9r-k0-9ih" firstAttribute="leading" secondItem="AMd-nd-s6o" secondAttribute="trailing" constant="20" id="G2x-V0-3f3"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="WDU-aK-kbu" secondAttribute="trailing" id="MoO-KW-8jS"/>
-                <constraint firstItem="ltd-e6-oKq" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Nig-lu-06A"/>
-                <constraint firstItem="ltd-e6-oKq" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="YOD-rV-SSx"/>
+                <constraint firstItem="e9r-k0-9ih" firstAttribute="centerY" secondItem="AMd-nd-s6o" secondAttribute="centerY" id="Ok0-IJ-l1N"/>
                 <constraint firstItem="WDU-aK-kbu" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="amP-gw-gXr"/>
                 <constraint firstItem="jrb-Lo-AUZ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="bCM-Yn-M4I"/>
-                <constraint firstItem="4Pm-w8-dp3" firstAttribute="top" secondItem="ltd-e6-oKq" secondAttribute="bottom" constant="10" id="hVl-JJ-Ifx"/>
+                <constraint firstItem="AMd-nd-s6o" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="27" id="dE6-Sa-wwR"/>
+                <constraint firstItem="4Pm-w8-dp3" firstAttribute="top" secondItem="AMd-nd-s6o" secondAttribute="bottom" constant="80" id="gs8-HP-2hY"/>
+                <constraint firstItem="AMd-nd-s6o" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="27" id="jzu-Ud-EWx"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="4Pm-w8-dp3" secondAttribute="trailing" constant="10" id="mG3-Ca-rub"/>
-                <constraint firstItem="ltd-e6-oKq" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="yCl-XZ-Lqm"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="84.375"/>
         </view>
     </objects>
     <resources>
-        <image name="scissors.badge.ellipsis" catalog="system" width="128" height="84"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -204,12 +197,6 @@ Choose a vase</string>
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
